@@ -1,0 +1,25 @@
+Steps to develop and deploy
+
+Create a Virtual Environment in VS code
+Install Flask
+Create requirements file
+
+$ pip freeze > requirements.txt
+
+Manually add googletrans and gunicorn libraries
+googletrans==4.0.0rc1
+gunicorn==20.1.0
+
+Create Heroku account and in Heroku account create new app
+Now we need to push the code to Heroku and deploy
+
+In VS Code
+$ heroku login
+$ git init
+$ heroku git:remote -a appname
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+
+Heroku defaultly build and deploy once the code is pushed to master
+ 
